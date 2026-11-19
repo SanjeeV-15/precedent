@@ -38,6 +38,13 @@ python eval/summarize.py --by-type results/<run folder>
 ```
 Larger vaults for the scaling test: `sh scale/build.sh`.
 
+## Use it from an agent
+Precedent ships a small read-only MCP server and an agent skill, so any MCP-capable agent can check a proposal against the
+decisions in force. See [docs/mcp.md](docs/mcp.md) and [skill/precedent/SKILL.md](skill/precedent/SKILL.md).
+```bash
+python -m precedent.mcp_server --store store/precedent.rl
+```
+
 ## Where the data lives
 - `vault/`: the markdown notes (fictional company "Fernwood Robotics"; no real data).
 - `store/precedent.rl`: the persistent Relate store built from the vault.
