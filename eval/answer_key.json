@@ -1,0 +1,131 @@
+{
+  "E01": {
+    "type": "lineage",
+    "kind": "set",
+    "text": "Which decision replaced D04?",
+    "answer": [
+      "D19"
+    ]
+  },
+  "E02": {
+    "type": "lineage",
+    "kind": "set",
+    "text": "Which decision replaced D11?",
+    "answer": [
+      "D27"
+    ]
+  },
+  "E03": {
+    "type": "lineage",
+    "kind": "set",
+    "text": "Which decisions does D17 replace?",
+    "answer": [
+      "D02"
+    ]
+  },
+  "E04": {
+    "type": "lineage",
+    "kind": "set",
+    "text": "Which decisions list D05 as something they depend on?",
+    "answer": [
+      "D13"
+    ]
+  },
+  "E05": {
+    "type": "active",
+    "kind": "set",
+    "text": "Which currently active decisions constrain Sentra Lidar?",
+    "answer": [
+      "D03",
+      "D12",
+      "D21"
+    ]
+  },
+  "E06": {
+    "type": "active",
+    "kind": "set",
+    "text": "Which currently active decisions affect the Beacon project?",
+    "answer": [
+      "D01",
+      "D17",
+      "D18",
+      "D20",
+      "D22",
+      "D28",
+      "D30"
+    ]
+  },
+  "E07": {
+    "type": "active",
+    "kind": "scalar",
+    "text": "How many decisions are currently active (not replaced by a later decision)?",
+    "answer": 25
+  },
+  "E08": {
+    "type": "alias",
+    "kind": "set",
+    "text": "Which currently active decisions concern Quanta DB? It may be written QuantaDB or Q-DB in notes.",
+    "answer": [
+      "D08",
+      "D18",
+      "D28"
+    ]
+  },
+  "E09": {
+    "type": "conflict",
+    "kind": "set",
+    "text": "Which pairs of currently active decisions conflict with each other? Answer each pair as 'Dxx+Dyy' with the lower number first.",
+    "answer": [
+      "D06+D29",
+      "D12+D21",
+      "D13+D24"
+    ]
+  },
+  "E10": {
+    "type": "stale",
+    "kind": "set",
+    "text": "Which currently active decisions depend on a decision that has since been replaced?",
+    "answer": [
+      "D13",
+      "D30"
+    ]
+  },
+  "E11": {
+    "type": "stale",
+    "kind": "set",
+    "text": "Which currently active decisions are owned by someone who has left the company?",
+    "answer": [
+      "D18",
+      "D30"
+    ]
+  },
+  "E12": {
+    "type": "proposal",
+    "kind": "set",
+    "text": "Proposal: use Sentra Lidar on the outdoor yard robots. Which currently active decisions conflict with this proposal?",
+    "answer": [
+      "D12"
+    ]
+  },
+  "E13": {
+    "type": "proposal",
+    "kind": "set",
+    "text": "Proposal: switch the Cobalt charging docks back to VoltEdge Batteries. Which currently active decisions conflict with this proposal?",
+    "answer": [
+      "D19"
+    ]
+  },
+  "E14": {
+    "type": "active",
+    "kind": "set",
+    "text": "Which currently active decisions were made by Priya Raman?",
+    "answer": [
+      "D01",
+      "D06",
+      "D12",
+      "D17",
+      "D25",
+      "D29"
+    ]
+  }
+}

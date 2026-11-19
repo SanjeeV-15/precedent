@@ -1,0 +1,281 @@
+{
+  "E01": {
+    "type": "lineage",
+    "kind": "set",
+    "text": "Which decision replaced D04?",
+    "answer": [
+      "D19"
+    ]
+  },
+  "E02": {
+    "type": "lineage",
+    "kind": "set",
+    "text": "Which decision replaced D11?",
+    "answer": [
+      "D27"
+    ]
+  },
+  "E03": {
+    "type": "lineage",
+    "kind": "set",
+    "text": "Which decisions does D17 replace?",
+    "answer": [
+      "D02"
+    ]
+  },
+  "E04": {
+    "type": "lineage",
+    "kind": "set",
+    "text": "Which decisions list D05 as something they depend on?",
+    "answer": [
+      "D13"
+    ]
+  },
+  "E05": {
+    "type": "active",
+    "kind": "set",
+    "text": "Which currently active decisions constrain Sentra Lidar?",
+    "answer": [
+      "D03",
+      "D12",
+      "D21"
+    ]
+  },
+  "E06": {
+    "type": "active",
+    "kind": "set",
+    "text": "Which currently active decisions affect the Beacon project?",
+    "answer": [
+      "D01",
+      "D17",
+      "D18",
+      "D20",
+      "D22",
+      "D28",
+      "D30"
+    ]
+  },
+  "E07": {
+    "type": "active",
+    "kind": "scalar",
+    "text": "How many decisions are currently active (not replaced by a later decision)?",
+    "answer": 155
+  },
+  "E08": {
+    "type": "alias",
+    "kind": "set",
+    "text": "Which currently active decisions concern Quanta DB? It may be written QuantaDB or Q-DB in notes.",
+    "answer": [
+      "D08",
+      "D18",
+      "D28"
+    ]
+  },
+  "E09": {
+    "type": "conflict",
+    "kind": "set",
+    "text": "Which pairs of currently active decisions conflict with each other? Answer each pair as 'Dxx+Dyy' with the lower number first.",
+    "answer": [
+      "D06+D29",
+      "D12+D21",
+      "D13+D24"
+    ]
+  },
+  "E10": {
+    "type": "stale",
+    "kind": "set",
+    "text": "Which currently active decisions depend on a decision that has since been replaced?",
+    "answer": [
+      "D13",
+      "D30"
+    ]
+  },
+  "E11": {
+    "type": "stale",
+    "kind": "set",
+    "text": "Which currently active decisions are owned by someone who has left the company?",
+    "answer": [
+      "D18",
+      "D30"
+    ]
+  },
+  "E12": {
+    "type": "proposal",
+    "kind": "set",
+    "text": "Proposal: use Sentra Lidar on the outdoor yard robots. Which currently active decisions conflict with this proposal?",
+    "answer": [
+      "D12"
+    ]
+  },
+  "E13": {
+    "type": "proposal",
+    "kind": "set",
+    "text": "Proposal: switch the Cobalt charging docks back to VoltEdge Batteries. Which currently active decisions conflict with this proposal?",
+    "answer": [
+      "D19"
+    ]
+  },
+  "E14": {
+    "type": "active",
+    "kind": "set",
+    "text": "Which currently active decisions were made by Priya Raman?",
+    "answer": [
+      "D01",
+      "D06",
+      "D12",
+      "D17",
+      "D25",
+      "D29"
+    ]
+  },
+  "E15": {
+    "type": "lineage",
+    "kind": "set",
+    "text": "Which decisions have been replaced by a later decision?",
+    "answer": [
+      "D02",
+      "D04",
+      "D05",
+      "D11",
+      "D121",
+      "D127",
+      "D15",
+      "D152",
+      "D32",
+      "D37",
+      "D38",
+      "D45",
+      "D46",
+      "D48",
+      "D50",
+      "D51",
+      "D53",
+      "D56",
+      "D58",
+      "D65",
+      "D69",
+      "D73",
+      "D79",
+      "D82",
+      "D86"
+    ]
+  },
+  "E16": {
+    "type": "stale",
+    "kind": "set",
+    "text": "Which decisions that are still in force were made on the basis of an earlier decision that no longer holds?",
+    "answer": [
+      "D13",
+      "D30"
+    ]
+  },
+  "E17": {
+    "type": "proposal",
+    "kind": "set",
+    "text": "We want to deploy Sentra Lidar sensors on the outdoor yard robots next quarter. Is there an active decision that blocks this? List the decision ids.",
+    "answer": [
+      "D12"
+    ]
+  },
+  "E18": {
+    "type": "proposal",
+    "kind": "set",
+    "text": "Proposal: Drift should use Mapwright map tiles again for the new warehouses. Which currently active decisions conflict with this proposal?",
+    "answer": [
+      "D24"
+    ]
+  },
+  "E19": {
+    "type": "proposal",
+    "kind": "set",
+    "text": "Proposal: use Granite Auth single sign-on for the Ember warehouse kiosks. Which currently active decisions conflict with this proposal? Answer with an empty list if none do.",
+    "answer": []
+  },
+  "E20": {
+    "type": "proposal",
+    "kind": "set",
+    "text": "Proposal: run the new Atlas controller on Kestrel RTOS under a fresh license. Which currently active decisions conflict with this proposal?",
+    "answer": [
+      "D29"
+    ]
+  },
+  "E21": {
+    "type": "active",
+    "kind": "set",
+    "text": "Which currently active decisions were made by Sofia Marini?",
+    "answer": [
+      "D10",
+      "D20",
+      "D26",
+      "D28"
+    ]
+  },
+  "E22": {
+    "type": "active",
+    "kind": "scalar",
+    "text": "How many currently active decisions affect the Flux project?",
+    "answer": 7
+  },
+  "E23": {
+    "type": "active",
+    "kind": "set",
+    "text": "Which technology has the most currently active decisions constraining it? Answer with the technology name; include every technology that ties.",
+    "answer": [
+      "Tessera Search"
+    ]
+  },
+  "E24": {
+    "type": "stale",
+    "kind": "set",
+    "text": "Which currently active decisions are both owned by someone who has left the company and depend on a replaced decision?",
+    "answer": [
+      "D30"
+    ]
+  },
+  "E25": {
+    "type": "active",
+    "kind": "set",
+    "text": "Which currently active decisions affect a project that is owned by someone who has left the company?",
+    "answer": [
+      "D01",
+      "D17",
+      "D18",
+      "D20",
+      "D22",
+      "D28",
+      "D30"
+    ]
+  },
+  "E26": {
+    "type": "lineage",
+    "kind": "set",
+    "text": "Which meetings produced a decision that has since been replaced? Answer with the meeting names.",
+    "answer": [
+      "Architecture Review 2025-02-11",
+      "Cobalt Kickoff 2025-04-02",
+      "Cobalt Review 2025-08-26",
+      "Drift Sync 2025-04-22",
+      "Field Review 2025-03-09",
+      "Field Review 2025-03-13",
+      "Field Review 2025-03-31",
+      "Field Review 2025-04-04",
+      "Field Review 2025-05-05",
+      "Flux Planning 2025-11-18",
+      "Ops Review 2025-01-10",
+      "Ops Review 2025-06-06",
+      "Ops Review 2025-06-23",
+      "Ops Review 2025-08-07",
+      "Ops Review 2025-08-20",
+      "Ops Review 2025-09-07",
+      "Ops Review 2026-02-09",
+      "Ops Review 2026-03-08",
+      "Ops Review 2026-06-27",
+      "Platform Sync 2025-02-01",
+      "Platform Sync 2025-03-22",
+      "Platform Sync 2025-04-13",
+      "Platform Sync 2025-04-27",
+      "Platform Sync 2025-07-11",
+      "Product Sync 2025-02-06"
+    ]
+  }
+}
