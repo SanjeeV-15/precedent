@@ -1,0 +1,28 @@
+E01 lineage   graph correct=True  f1=1.00 status=answered   calls= 1 err=0 hits=  205 tok=2628+147 2.47s
+E02 lineage   graph correct=True  f1=1.00 status=answered   calls= 1 err=0 hits=  205 tok=2628+147 1.69s
+E03 lineage   graph correct=True  f1=1.00 status=answered   calls= 1 err=0 hits=    2 tok=2626+141 2.84s
+E04 lineage   graph correct=True  f1=1.00 status=answered   calls= 1 err=0 hits=  225 tok=2640+147 2.34s
+E05 active    graph correct=True  f1=1.00 status=answered   calls= 2 err=0 hits=   25 tok=4474+367 4.79s
+E06 active    graph correct=True  f1=1.00 status=answered   calls= 1 err=0 hits=   31 tok=2847+221 2.96s
+E07 active    graph correct=True  f1=1.00 status=answered   calls= 1 err=0 hits=  180 tok=2647+141 2.74s
+E08 alias     graph correct=True  f1=1.00 status=answered   calls= 2 err=0 hits=   45 tok=3213+408 3.82s
+E09 conflict  graph correct=True  f1=1.00 status=answered   calls= 2 err=0 hits=  235 tok=3707+390 3.39s
+E10 stale     graph correct=True  f1=1.00 status=answered   calls= 1 err=0 hits=  235 tok=2718+204 3.07s
+E11 stale     graph correct=True  f1=1.00 status=answered   calls= 1 err=0 hits=  385 tok=2766+202 1.75s
+E12 proposal  graph correct=True  f1=1.00 status=answered   calls= 3 err=0 hits=   43 tok=5980+493 5.17s
+E13 proposal  graph correct=True  f1=1.00 status=answered   calls= 3 err=0 hits=   44 tok=4928+471 4.89s
+E14 active    graph correct=True  f1=1.00 status=answered   calls= 1 err=0 hits=   10 tok=2746+204 1.91s
+E15 lineage   graph correct=True  f1=1.00 status=answered   calls= 1 err=0 hits=  205 tok=2886+227 2.15s
+E16 stale     graph correct=True  f1=1.00 status=answered   calls= 1 err=0 hits=  223 tok=2768+238 2.05s
+E17 proposal  graph correct=True  f1=1.00 status=answered   calls= 1 err=0 hits=   35 tok=3260+381 3.84s
+E18 proposal  graph correct=True  f1=1.00 status=answered   calls= 3 err=0 hits=   47 tok=5008+539 5.92s
+E19 proposal  graph correct=True  f1=1.00 status=answered   calls= 3 err=0 hits=   47 tok=4986+535 4.22s
+E20 proposal  graph correct=True  f1=1.00 status=answered   calls= 3 err=0 hits=   50 tok=5023+529 5.68s
+E21 active    graph correct=True  f1=1.00 status=answered   calls= 1 err=0 hits=   22 tok=2792+210 2.13s
+E22 active    graph correct=True  f1=1.00 status=answered   calls= 1 err=0 hits=  210 tok=2695+193 1.86s
+E23 active    graph correct=True  f1=1.00 status=answered   calls= 2 err=1 hits=  240 tok=4826+371 4.0s
+E24 stale     graph correct=True  f1=1.00 status=answered   calls= 1 err=0 hits=  388 tok=2776+253 3.09s
+E25 active    graph correct=True  f1=1.00 status=answered   calls= 1 err=0 hits=  725 tok=2806+241 2.54s
+E26 lineage   graph correct=True  f1=1.00 status=answered   calls= 1 err=0 hits=  359 tok=3244+511 3.4s
+
+graph/claude-sonnet-5-5: 26/26 correct (of 26 planned); tokens in=89618 out=7911; est. cost ~$0.2583

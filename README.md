@@ -51,7 +51,19 @@ python -m precedent.mcp_server --store store/precedent.rl
 - `eval/answer_key.json`: answers computed in plain Python, independent of Cypher.
 
 ## Evaluation
-_Results to come:_ agent with file search vs agent with the graph, per question type, with committed transcripts for replay.
+Same 26 questions, same prompts and tools for both agents, answer key computed independently of Cypher. One agent
+searches and reads the markdown notes (**files**); the other writes read-only Cypher on the Relate store (**graph**).
+
+| Model | Notes | Arm | Correct | Tokens | Est. cost |
+|---|---|---|---|---|---|
+| Haiku 5.5 (3 runs) | 82 | graph / files | 77/78 / 77/78 | 0.42M / 1.48M | $0.06 / $0.19 |
+| Haiku 5.5 (3 runs) | 416 | graph / files | 77/78 / 76/78 | 0.77M / 3.99M | $0.10 / $0.48 |
+| Haiku 5.5 (3 runs) | 1,116 | graph / files | 77/78 / 72/78 | 0.80M / 12.33M | $0.10 / $1.42 |
+| Sonnet 5.5 (1 run) | 416 | graph / files | 26/26 / 24/26 | 0.10M / 1.01M | $0.26 / $2.23 |
+
+On a small vault the two agents are about equally accurate. As the vault grows, the graph agent's cost stays flat while
+file search gets costlier and less reliable. These are small samples; read the caveats in [docs/results.md](docs/results.md).
+Raw transcripts for every run are in `results/`.
 
 ## Credits and license
 Apache-2.0 (see LICENSE). Built with Relate by Neo4j (Apache-2.0). All data is synthetic.

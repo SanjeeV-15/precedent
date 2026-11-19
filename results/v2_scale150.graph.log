@@ -1,0 +1,16 @@
+E01 lineage   graph correct=True  f1=1.00 status=answered   calls= 1 err=0 hits=  205 tok=2764+242 1.86s
+E02 lineage   graph correct=True  f1=1.00 status=answered   calls= 1 err=0 hits=  205 tok=2734+225 1.5s
+E03 lineage   graph correct=True  f1=1.00 status=answered   calls= 1 err=0 hits=    2 tok=2753+233 1.74s
+E04 lineage   graph correct=True  f1=1.00 status=answered   calls= 1 err=0 hits=  225 tok=2652+181 1.52s
+E05 active    graph correct=True  f1=1.00 status=answered   calls= 2 err=0 hits=   45 tok=3380+580 2.78s
+E06 active    graph correct=True  f1=1.00 status=answered   calls= 1 err=0 hits=   31 tok=3023+331 1.99s
+E07 active    graph correct=True  f1=1.00 status=answered   calls= 2 err=0 hits=  360 tok=4257+346 2.56s
+E08 alias     graph correct=True  f1=1.00 status=answered   calls= 5 err=0 hits=  500 tok=23320+1271 5.91s
+E09 conflict  graph correct=True  f1=1.00 status=answered   calls= 5 err=0 hits=  504 tok=30408+2302 9.82s
+E10 stale     graph correct=True  f1=1.00 status=answered   calls= 1 err=0 hits=  277 tok=3094+584 2.9s
+E11 stale     graph correct=True  f1=1.00 status=answered   calls= 1 err=0 hits=  385 tok=2838+335 2.12s
+E12 proposal  graph correct=True  f1=1.00 status=answered   calls= 4 err=0 hits=  405 tok=22338+1396 6.49s
+E13 proposal  graph correct=True  f1=1.00 status=answered   calls= 4 err=0 hits=   73 tok=6216+1072 5.69s
+E14 active    graph correct=True  f1=1.00 status=answered   calls= 1 err=0 hits=   10 tok=2989+356 2.27s
+
+graph/claude-haiku-5-5: 14/14 correct; tokens in=112766 out=9454; est. cost ~$0.0160

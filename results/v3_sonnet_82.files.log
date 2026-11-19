@@ -1,0 +1,28 @@
+E01 lineage   files correct=True  f1=1.00 status=answered   calls= 3 err=0 hits=    0 tok=6174+255 4.75s
+E02 lineage   files correct=True  f1=1.00 status=answered   calls= 2 err=0 hits=    0 tok=4424+193 2.29s
+E03 lineage   files correct=True  f1=1.00 status=answered   calls= 3 err=0 hits=    0 tok=9936+247 3.55s
+E04 lineage   files correct=True  f1=1.00 status=answered   calls= 3 err=0 hits=    0 tok=5233+257 2.85s
+E05 active    files correct=True  f1=1.00 status=answered   calls= 8 err=0 hits=    0 tok=14963+645 7.02s
+E06 active    files correct=True  f1=1.00 status=answered   calls= 4 err=0 hits=    0 tok=8103+362 3.12s
+E07 active    files correct=True  f1=1.00 status=answered   calls= 6 err=0 hits=    0 tok=16595+612 8.99s
+E08 alias     files correct=True  f1=1.00 status=answered   calls= 3 err=0 hits=    0 tok=7401+349 3.47s
+E09 conflict  files correct=True  f1=1.00 status=answered   calls=25 err=0 hits=    0 tok=28912+2225 14.53s
+E10 stale     files correct=False f1=0.80 status=answered   calls= 3 err=0 hits=    0 tok=9190+454 6.54s
+E11 stale     files correct=True  f1=1.00 status=answered   calls= 7 err=0 hits=    0 tok=11398+517 4.6s
+E12 proposal  files correct=True  f1=1.00 status=answered   calls= 5 err=0 hits=    0 tok=9229+396 4.29s
+E13 proposal  files correct=True  f1=1.00 status=answered   calls= 6 err=0 hits=    0 tok=12232+437 4.11s
+E14 active    files correct=True  f1=1.00 status=answered   calls= 5 err=0 hits=    0 tok=12445+658 7.68s
+E15 lineage   files correct=True  f1=1.00 status=answered   calls= 8 err=0 hits=    0 tok=8536+614 7.38s
+E16 stale     files correct=False f1=0.80 status=answered   calls= 5 err=0 hits=    0 tok=12633+584 5.19s
+E17 proposal  files correct=True  f1=1.00 status=answered   calls= 5 err=0 hits=    0 tok=7492+373 4.35s
+E18 proposal  files correct=True  f1=1.00 status=answered   calls= 4 err=0 hits=    0 tok=8754+323 4.63s
+E19 proposal  files correct=True  f1=1.00 status=answered   calls= 5 err=0 hits=    0 tok=13864+459 6.14s
+E20 proposal  files correct=True  f1=1.00 status=answered   calls= 6 err=0 hits=    0 tok=6993+549 6.03s
+E21 active    files correct=True  f1=1.00 status=answered   calls= 6 err=0 hits=    0 tok=15017+625 7.67s
+E22 active    files correct=True  f1=1.00 status=answered   calls= 4 err=0 hits=    0 tok=10970+385 5.63s
+E23 active    files correct=True  f1=1.00 status=answered   calls=10 err=0 hits=    0 tok=22912+951 8.9s
+E24 stale     files correct=True  f1=1.00 status=answered   calls=10 err=0 hits=    0 tok=21959+768 9.33s
+E25 active    files correct=True  f1=1.00 status=answered   calls= 7 err=0 hits=    0 tok=13172+662 7.75s
+E26 lineage   files correct=True  f1=1.00 status=answered   calls= 6 err=0 hits=    0 tok=18941+641 9.31s
+
+files/claude-sonnet-5-5: 24/26 correct (of 26 planned); tokens in=317478 out=14541; est. cost ~$0.7804

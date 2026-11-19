@@ -1,0 +1,16 @@
+E01 lineage   files correct=True  f1=1.00 status=answered   calls= 3 err=0 hits=    0 tok=6260+331 3.32s
+E02 lineage   files correct=True  f1=1.00 status=answered   calls= 5 err=0 hits=    0 tok=51636+668 4.5s
+E03 lineage   files correct=True  f1=1.00 status=answered   calls= 2 err=0 hits=    0 tok=8614+294 2.35s
+E04 lineage   files correct=True  f1=1.00 status=answered   calls= 4 err=0 hits=    0 tok=6832+548 4.09s
+E05 active    files correct=True  f1=1.00 status=answered   calls= 7 err=0 hits=    0 tok=57046+1139 6.45s
+E06 active    files correct=True  f1=1.00 status=answered   calls=16 err=0 hits=    0 tok=89185+2016 9.72s
+E07 active    files correct=True  f1=1.00 status=answered   calls=129 err=0 hits=    0 tok=1145716+36214 161.84s
+E08 alias     files correct=True  f1=1.00 status=answered   calls= 5 err=0 hits=    0 tok=54881+1060 6.58s
+E09 conflict  files correct=True  f1=1.00 status=answered   calls=21 err=0 hits=    0 tok=145231+4183 19.16s
+E10 stale     files correct=True  f1=1.00 status=answered   calls=76 err=0 hits=    0 tok=388903+23590 98.81s
+E11 stale     files correct=True  f1=1.00 status=answered   calls=12 err=0 hits=    0 tok=145320+1269 9.16s
+E12 proposal  files correct=True  f1=1.00 status=answered   calls= 8 err=0 hits=    0 tok=29501+1388 8.08s
+E13 proposal  files correct=True  f1=1.00 status=answered   calls= 7 err=0 hits=    0 tok=60933+1107 6.52s
+E14 active    files correct=True  f1=1.00 status=answered   calls= 6 err=0 hits=    0 tok=46823+2019 10.94s
+
+files/claude-haiku-5-5: 14/14 correct; tokens in=2236881 out=75826; est. cost ~$0.2616
