@@ -282,13 +282,14 @@ def apply(store, vault, plan):
     """Write the notes and the graph together. Any failure rolls the graph back and removes the new files."""
     vault = pathlib.Path(vault)
     written = []
+    native = pathlib.Path(store).is_dir()  # native vault mode: the folder is the store, Relate renders the notes
     conn = relate.connect(store)
     conn.autocommit = False
     try:
         cur = conn.cursor()
         for cypher, params in plan["statements"]:
             cur.execute(cypher, params)
-        for label, name, content in plan["notes"]:
+        for label, name, content in ([] if native else plan["notes"]):
             d = vault / label
             d.mkdir(parents=True, exist_ok=True)
             f = d / f"{name}.md"

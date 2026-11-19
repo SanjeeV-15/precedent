@@ -190,6 +190,17 @@ def add_filler(n, seed=7):
     D.extend(rows)
 
 
+SCHEMA_NOTE = """---
+type: Vault
+name: Schema
+CONSTRAINS:
+  - "[[Technology/Orbit Cloud]]"
+---
+Declares CONSTRAINS as a relationship type for Relate's markdown-vault codec, which requires every relationship type to
+appear at least once as a plain link. Decision notes use the map form (stance, scope), which carries the edge properties.
+"""
+
+
 def tname(k):
     return TECH[k][0]
 
@@ -398,6 +409,7 @@ def main(filler=0, vault=None, key_path=None, key_only=False):
         body = f"# {did}: {title}\n\n{why}\n"
         write_note("Decision", dname(r), fm, body)
 
+    (VAULT / "Schema.md").write_text(SCHEMA_NOTE, encoding="utf-8")
     key = compute_key()
     kp = pathlib.Path(key_path) if key_path else ROOT / "eval" / "answer_key.json"
     kp.parent.mkdir(exist_ok=True)

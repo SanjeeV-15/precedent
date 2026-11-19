@@ -9,3 +9,7 @@ scale/vault_*/
 scale/store_*.rl
 .DS_Store
 .pytest_cache/
+vault/.cypherlite*
+vault/index.md
+vault/log.md
+vault_native/

@@ -37,5 +37,7 @@ printf '%s\n' \
 ```
 
 ## Relate's own MCP server
-Relate can also serve the same store directly (`relate serve --mcp`), exposing generic Cypher tools. Precedent's server
-is narrower on purpose: it gives agents domain questions (conflicts, stale, lineage) instead of a query language.
+Relate can serve the same data directly (`relate serve --read-only --mcp PORT`, loopback only). It exposes two generic tools,
+`get_schema` and `read_cypher` (argument `statement`), and we checked it answers the conflict query on the notes folder. See
+[native-vault.md](native-vault.md). Precedent's server is narrower on purpose: it gives agents domain questions (conflicts, stale,
+lineage, check) instead of a query language.

@@ -48,7 +48,8 @@ We report whatever it shows. Hypothesis: the graph arm wins on conflict, stale, 
 - [ ] 25 questions, including paraphrased proposals
 - [ ] MCP server config and agent skill
 - [ ] README per Relate's template, 1-2 minute demo video
-- [ ] Stretch: Relate native markdown-vault mode, browser viewer (WASM), capture command that drafts a decision note from meeting text
+- [x] Native Relate markdown-vault mode (docs/native-vault.md), capture command (docs/capture.md), MCP server and skill, tests, CI
+- [ ] Stretch: browser viewer (WASM)
 
 ## Schedule
 | Dates | Work |

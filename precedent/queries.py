@@ -131,4 +131,4 @@ def check(cur, tech, scope):
 
 
 def scopes(cur):
-    return [r["s"] for r in _rows(cur, "MATCH ()-[r:CONSTRAINS]->() RETURN DISTINCT r.scope AS s ORDER BY s")]
+    return [r["s"] for r in _rows(cur, "MATCH (:Decision)-[r:CONSTRAINS]->() RETURN DISTINCT r.scope AS s ORDER BY s")]
