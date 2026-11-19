@@ -1,0 +1,297 @@
+[
+ {
+  "id": "C01",
+  "text": "Architecture review: from now on no new service may send data to Pulse Telemetry.",
+  "constraints": [
+   {
+    "tech": "Pulse Telemetry",
+    "stance": [
+     "forbids"
+    ],
+    "scope": [
+     "new-services",
+     "new-service",
+     "new-systems"
+    ]
+   }
+  ],
+  "affects": [],
+  "supersedes": null,
+  "conflicts": []
+ },
+ {
+  "id": "C02",
+  "text": "Atlas weekly: Marcus says we will mount Sentra Lidar sensors on the outdoor yard robots next month.",
+  "constraints": [
+   {
+    "tech": "Sentra Lidar",
+    "stance": [
+     "allows",
+     "requires"
+    ],
+    "scope": [
+     "outdoor"
+    ]
+   }
+  ],
+  "affects": [
+   "Atlas"
+  ],
+  "supersedes": null,
+  "conflicts": [
+   "D12"
+  ]
+ },
+ {
+  "id": "C03",
+  "text": "Security review: all QuantaDB backups must be encrypted with customer-managed keys.",
+  "constraints": [
+   {
+    "tech": "Quanta DB",
+    "stance": [
+     "requires"
+    ],
+    "scope": [
+     "backups",
+     "backup",
+     "encryption",
+     "encryption-at-rest",
+     "backup-encryption"
+    ]
+   }
+  ],
+  "affects": [],
+  "supersedes": null,
+  "conflicts": []
+ },
+ {
+  "id": "C04",
+  "text": "Cobalt review: Helio Cells recalled their cells, so we are going back to VoltEdge Batteries for the Cobalt docks. This replaces the Helio decision.",
+  "constraints": [
+   {
+    "tech": "VoltEdge Batteries",
+    "stance": [
+     "requires"
+    ],
+    "scope": [
+     "cobalt"
+    ]
+   },
+   {
+    "tech": "Helio Cells",
+    "stance": [
+     "forbids"
+    ],
+    "scope": [
+     "cobalt"
+    ],
+    "optional": true
+   }
+  ],
+  "affects": [
+   "Cobalt"
+  ],
+  "supersedes": "D19",
+  "conflicts": []
+ },
+ {
+  "id": "C05",
+  "text": "Drift sync: Tomas confirmed Mapwright is not coming back for Drift; we stay on in-house tiles.",
+  "constraints": [
+   {
+    "tech": "Mapwright",
+    "stance": [
+     "forbids"
+    ],
+    "scope": [
+     "drift"
+    ]
+   }
+  ],
+  "affects": [
+   "Drift"
+  ],
+  "supersedes": null,
+  "conflicts": [
+   "D13"
+  ]
+ },
+ {
+  "id": "C06",
+  "text": "Ember review: Aiko decided kiosk sessions will expire after 12 hours instead of 8.",
+  "constraints": [],
+  "affects": [
+   "Ember"
+  ],
+  "supersedes": "D23",
+  "conflicts": []
+ },
+ {
+  "id": "C07",
+  "text": "Flux planning: Daniel decided raw telemetry retention drops to 14 days, replacing the 30-day rule.",
+  "constraints": [],
+  "affects": [
+   "Flux"
+  ],
+  "supersedes": "D22",
+  "conflicts": []
+ },
+ {
+  "id": "C08",
+  "text": "Architecture review: Granite Auth is required for every external API.",
+  "constraints": [
+   {
+    "tech": "Granite Auth",
+    "stance": [
+     "requires"
+    ],
+    "scope": [
+     "external-apis",
+     "external-api",
+     "external"
+    ]
+   }
+  ],
+  "affects": [],
+  "supersedes": null,
+  "conflicts": []
+ },
+ {
+  "id": "C09",
+  "text": "Beacon planning: Beacon will move scheduling to Orbit Cloud native queues and stop using Q-DB queues. This replaces the Q-DB queue decision.",
+  "constraints": [
+   {
+    "tech": "Orbit Cloud",
+    "stance": [
+     "requires"
+    ],
+    "scope": [
+     "beacon"
+    ]
+   },
+   {
+    "tech": "Quanta DB",
+    "stance": [
+     "forbids"
+    ],
+    "scope": [
+     "beacon"
+    ],
+    "optional": true
+   }
+  ],
+  "affects": [
+   "Beacon"
+  ],
+  "supersedes": "D18",
+  "conflicts": []
+ },
+ {
+  "id": "C10",
+  "text": "Cobalt review: Kestrel RTOS stays on every Cobalt controller.",
+  "constraints": [
+   {
+    "tech": "Kestrel RTOS",
+    "stance": [
+     "requires"
+    ],
+    "scope": [
+     "cobalt"
+    ]
+   }
+  ],
+  "affects": [
+   "Cobalt"
+  ],
+  "supersedes": null,
+  "conflicts": []
+ },
+ {
+  "id": "C11",
+  "text": "Security review: nothing containing unencrypted customer PII may be backed up to Orbit Cloud.",
+  "constraints": [
+   {
+    "tech": "Orbit Cloud",
+    "stance": [
+     "forbids"
+    ],
+    "scope": [
+     "unencrypted-pii-backups",
+     "customer-pii-backups",
+     "pii-backups",
+     "unencrypted-pii",
+     "unencrypted-customer-pii",
+     "unencrypted-pii-backup"
+    ]
+   }
+  ],
+  "affects": [],
+  "supersedes": null,
+  "conflicts": []
+ },
+ {
+  "id": "C12",
+  "text": "Atlas weekly: Marcus raised the picker payload limit to 15 kg.",
+  "constraints": [],
+  "affects": [
+   "Atlas"
+  ],
+  "supersedes": "D16",
+  "conflicts": []
+ },
+ {
+  "id": "C13",
+  "text": "Security review: Sofia decided that QuantaDB must also be encrypted in transit.",
+  "constraints": [
+   {
+    "tech": "Quanta DB",
+    "stance": [
+     "requires"
+    ],
+    "scope": [
+     "encryption-in-transit",
+     "in-transit",
+     "transit",
+     "encryption-in-flight"
+    ]
+   }
+  ],
+  "affects": [],
+  "supersedes": null,
+  "conflicts": []
+ },
+ {
+  "id": "C14",
+  "text": "Ember review: Aiko decided Granite Auth must not be used for the Ember portal anymore.",
+  "constraints": [
+   {
+    "tech": "Granite Auth",
+    "stance": [
+     "forbids"
+    ],
+    "scope": [
+     "ember"
+    ]
+   }
+  ],
+  "affects": [
+   "Ember"
+  ],
+  "supersedes": null,
+  "conflicts": [
+   "D07"
+  ],
+  "outcomes": [
+   {
+    "supersedes": null,
+    "conflicts": [
+     "D07"
+    ]
+   },
+   {
+    "supersedes": "D07",
+    "conflicts": []
+   }
+  ]
+ }
+]

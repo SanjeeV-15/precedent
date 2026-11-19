@@ -26,6 +26,28 @@ def resolve_tech(cur, text):
     return None
 
 
+def _tokens(scope):
+    return {t for t in re.split(r"[^a-z0-9]+", str(scope).lower()) if t}
+
+
+def related_scopes(a, b):
+    """True when two scopes are nested but not identical (for example 'outdoor' and 'outdoor-yard-robots').
+    The graph's own conflict rule only treats equal scopes (or 'all') as overlapping; this flags the near misses."""
+    if a == b or "all" in (a, b):
+        return False
+    ta, tb = _tokens(a), _tokens(b)
+    return bool(ta and tb) and (ta <= tb or tb <= ta)
+
+
+def possible_conflicts(cur, tech, scope, stance):
+    """Active decisions with the opposing stance on a related (nested) scope."""
+    other = "r.stance = 'forbids'" if stance in ("requires", "allows") else "r.stance IN ['requires','allows']"
+    rows = _rows(cur, "MATCH (d:Decision)-[r:CONSTRAINS]->(:Technology {name:$t}) "
+                      f"WHERE {other} AND {ACTIVE} RETURN d.id AS id, d.title AS title, r.stance AS stance, r.scope AS scope "
+                      "ORDER BY id", {"t": tech})
+    return [r for r in rows if related_scopes(scope, r["scope"])]
+
+
 def decision_brief(cur, did):
     rows = _rows(cur, "MATCH (d:Decision {id:$id}) RETURN d.title AS title, d.date AS date", {"id": did})
     return rows[0] if rows else None
@@ -102,7 +124,9 @@ def check(cur, tech, scope):
     related = _rows(cur, "MATCH (d:Decision)-[r:CONSTRAINS]->(:Technology {name:$t}) "
                          f"WHERE {ACTIVE} RETURN d.id AS id, d.title AS title, r.stance AS stance, r.scope AS scope "
                          "ORDER BY id", {"t": name})
-    return {"technology": name, "scope": scope, "conflicts": _rows(cur, q, {"t": name, "s": scope}),
+    conflicts = _rows(cur, q, {"t": name, "s": scope})
+    return {"technology": name, "scope": scope, "conflicts": conflicts,
+            "possible_conflicts": possible_conflicts(cur, name, scope, "requires"),
             "all_active_on_technology": related}
 
 

@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1270 820" width="1270" height="820" font-family="ITC Franklin Gothic, Franklin Gothic Medium, Arial, sans-serif">
+<defs><marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8A8F98"/></marker><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C0392B"/></marker><marker id="ay" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#B8860B"/></marker></defs>
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<text x="20" y="32" font-size="20" font-weight="700" fill="#1B1F24">Precedent: what it catches, read from the Relate graph</text>
+<text x="20" y="54" font-size="12.5" fill="#5B636E">Green = active decision. Grey = replaced. Red = conflict. Amber dashed = depends on. Grey arrow = replaces (new points to old).</text>
+<rect x="20" y="78" width="394" height="334" rx="10" fill="#F6F8FA" stroke="#D8DEE4"/>
+<text x="34" y="102" font-size="14" font-weight="700" fill="#1B1F24">Scoped conflict</text>
+<text x="34" y="119" font-size="10.5" fill="#5B636E">D12 forbids Sentra Lidar outdoors; D21 plans an outdoor pilot</text>
+<path d="M384,246.0 C402,246.0 402,158.0 384,158.0" fill="none" stroke="#B8860B" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ay)"/>
+<path d="M384,334.0 C414,334.0 414,158.0 384,158.0" fill="none" stroke="#B8860B" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ay)"/>
+<path d="M189.0,272 L189.0,308" stroke="#C0392B" stroke-width="2.6"/>
+<rect x="155.0" y="280.0" width="68" height="20" rx="10" fill="#C0392B"/>
+<text x="189.0" y="294.0" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">conflict</text>
+<rect x="34" y="132" width="350" height="52" rx="7" fill="#FFFFFF" stroke="#1D7A46" stroke-width="2"/>
+<rect x="34" y="132" width="6" height="52" rx="3" fill="#1D7A46"/>
+<text x="48" y="152" font-size="12.5" font-weight="700" fill="#1B1F24">D03  Use Sentra Lidar for Atlas picker arm sensi…</text>
+<text x="48" y="170" font-size="11" fill="#5B636E">requires Sentra Lidar · atlas-indoor</text>
+<rect x="34" y="220" width="350" height="52" rx="7" fill="#FFFFFF" stroke="#1D7A46" stroke-width="2"/>
+<rect x="34" y="220" width="6" height="52" rx="3" fill="#1D7A46"/>
+<text x="48" y="240" font-size="12.5" font-weight="700" fill="#1B1F24">D12  Sentra Lidar approved for indoor use only</text>
+<text x="48" y="258" font-size="11" fill="#5B636E">forbids Sentra Lidar · outdoor</text>
+<rect x="34" y="308" width="350" height="52" rx="7" fill="#FFFFFF" stroke="#1D7A46" stroke-width="2"/>
+<rect x="34" y="308" width="6" height="52" rx="3" fill="#1D7A46"/>
+<text x="48" y="328" font-size="12.5" font-weight="700" fill="#1B1F24">D21  Start the Atlas Yard pilot using the existi…</text>
+<text x="48" y="346" font-size="11" fill="#5B636E">allows Sentra Lidar · outdoor</text>
+<rect x="430" y="78" width="394" height="334" rx="10" fill="#F6F8FA" stroke="#D8DEE4"/>
+<text x="444" y="102" font-size="14" font-weight="700" fill="#1B1F24">Replaced, but still depended on</text>
+<text x="444" y="119" font-size="10.5" fill="#5B636E">D13 rests on D05, which D24 replaced; D24 also forbids what D13 requires</text>
+<path d="M794,246.0 C812,246.0 812,158.0 794,158.0" fill="none" stroke="#8A8F98" stroke-width="1.8" marker-end="url(#ag)"/>
+<path d="M794,334.0 C824,334.0 824,158.0 794,158.0" fill="none" stroke="#B8860B" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ay)"/>
+<path d="M599.0,272 L599.0,308" stroke="#C0392B" stroke-width="2.6"/>
+<rect x="565.0" y="280.0" width="68" height="20" rx="10" fill="#C0392B"/>
+<text x="599.0" y="294.0" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">conflict</text>
+<rect x="444" y="132" width="350" height="52" rx="7" fill="#FFFFFF" stroke="#8A8F98" stroke-width="2"/>
+<rect x="444" y="132" width="6" height="52" rx="3" fill="#8A8F98"/>
+<text x="458" y="152" font-size="12.5" font-weight="700" fill="#5B636E" text-decoration="line-through">D05  Drift uses Mapwright for map tiles</text>
+<text x="458" y="170" font-size="11" fill="#5B636E">requires Mapwright · drift</text>
+<rect x="444" y="220" width="350" height="52" rx="7" fill="#FFFFFF" stroke="#1D7A46" stroke-width="2"/>
+<rect x="444" y="220" width="6" height="52" rx="3" fill="#1D7A46"/>
+<text x="458" y="240" font-size="12.5" font-weight="700" fill="#1B1F24">D24  Replace Mapwright with in-house map tiles</text>
+<text x="458" y="258" font-size="11" fill="#5B636E">forbids Mapwright · drift</text>
+<rect x="444" y="308" width="350" height="52" rx="7" fill="#FFFFFF" stroke="#1D7A46" stroke-width="2"/>
+<rect x="444" y="308" width="6" height="52" rx="3" fill="#1D7A46"/>
+<text x="458" y="328" font-size="12.5" font-weight="700" fill="#1B1F24">D13  Drift falls back to dead reckoning when Map…</text>
+<text x="458" y="346" font-size="11" fill="#5B636E">requires Mapwright · drift</text>
+<rect x="840" y="78" width="394" height="334" rx="10" fill="#F6F8FA" stroke="#D8DEE4"/>
+<text x="854" y="102" font-size="14" font-weight="700" fill="#1B1F24">Contradiction in force</text>
+<text x="854" y="119" font-size="10.5" fill="#5B636E">D06 requires Kestrel on all controllers; D29 pauses new licenses</text>
+<path d="M1009.0,184 L1009.0,220" stroke="#C0392B" stroke-width="2.6"/>
+<rect x="975.0" y="192.0" width="68" height="20" rx="10" fill="#C0392B"/>
+<text x="1009.0" y="206.0" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">conflict</text>
+<rect x="854" y="132" width="350" height="52" rx="7" fill="#FFFFFF" stroke="#1D7A46" stroke-width="2"/>
+<rect x="854" y="132" width="6" height="52" rx="3" fill="#1D7A46"/>
+<text x="868" y="152" font-size="12.5" font-weight="700" fill="#1B1F24">D06  Run Kestrel RTOS on all onboard controllers</text>
+<text x="868" y="170" font-size="11" fill="#5B636E">requires Kestrel RTOS · all</text>
+<rect x="854" y="220" width="350" height="52" rx="7" fill="#FFFFFF" stroke="#1D7A46" stroke-width="2"/>
+<rect x="854" y="220" width="6" height="52" rx="3" fill="#1D7A46"/>
+<text x="868" y="240" font-size="12.5" font-weight="700" fill="#1B1F24">D29  Pause new Kestrel RTOS licenses while we ev…</text>
+<text x="868" y="258" font-size="11" fill="#5B636E">forbids Kestrel RTOS · new-controllers</text>
+<rect x="20" y="428" width="394" height="334" rx="10" fill="#F6F8FA" stroke="#D8DEE4"/>
+<text x="34" y="452" font-size="14" font-weight="700" fill="#1B1F24">Stale after a replacement</text>
+<text x="34" y="469" font-size="10.5" fill="#5B636E">D17 replaced D02; D30 was decided on the old standard</text>
+<path d="M384,596.0 C402,596.0 402,508.0 384,508.0" fill="none" stroke="#8A8F98" stroke-width="1.8" marker-end="url(#ag)"/>
+<path d="M384,684.0 C414,684.0 414,508.0 384,508.0" fill="none" stroke="#B8860B" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ay)"/>
+<rect x="34" y="482" width="350" height="52" rx="7" fill="#FFFFFF" stroke="#8A8F98" stroke-width="2"/>
+<rect x="34" y="482" width="6" height="52" rx="3" fill="#8A8F98"/>
+<text x="48" y="502" font-size="12.5" font-weight="700" fill="#5B636E" text-decoration="line-through">D02  Standardize fleet telemetry on Pulse Teleme…</text>
+<text x="48" y="520" font-size="11" fill="#5B636E">requires Pulse Telemetry · telemetry</text>
+<rect x="34" y="570" width="350" height="52" rx="7" fill="#FFFFFF" stroke="#1D7A46" stroke-width="2"/>
+<rect x="34" y="570" width="6" height="52" rx="3" fill="#1D7A46"/>
+<text x="48" y="590" font-size="12.5" font-weight="700" fill="#1B1F24">D17  Move telemetry from Pulse Telemetry to Orbi…</text>
+<text x="48" y="608" font-size="11" fill="#5B636E">requires Orbit Cloud · telemetry</text>
+<rect x="34" y="658" width="350" height="52" rx="7" fill="#FFFFFF" stroke="#1D7A46" stroke-width="2"/>
+<rect x="34" y="658" width="6" height="52" rx="3" fill="#1D7A46"/>
+<text x="48" y="678" font-size="12.5" font-weight="700" fill="#1B1F24">D30  Beacon dashboards read telemetry from the P…</text>
+<text x="48" y="696" font-size="11" fill="#5B636E">requires Pulse Telemetry · beacon</text>
+<rect x="430" y="428" width="394" height="334" rx="10" fill="#F6F8FA" stroke="#D8DEE4"/>
+<text x="444" y="452" font-size="14" font-weight="700" fill="#1B1F24">Replacement chains</text>
+<text x="444" y="469" font-size="10.5" fill="#5B636E">The old rule is kept for history, never cited as current</text>
+<path d="M794,581.3333333333334 C812,581.3333333333334 812,508.0 794,508.0" fill="none" stroke="#8A8F98" stroke-width="1.8" marker-end="url(#ag)"/>
+<path d="M794,728.0 C824,728.0 824,654.6666666666666 794,654.6666666666666" fill="none" stroke="#8A8F98" stroke-width="1.8" marker-end="url(#ag)"/>
+<rect x="444" y="482.0" width="350" height="52" rx="7" fill="#FFFFFF" stroke="#8A8F98" stroke-width="2"/>
+<rect x="444" y="482.0" width="6" height="52" rx="3" fill="#8A8F98"/>
+<text x="458" y="502.0" font-size="12.5" font-weight="700" fill="#5B636E" text-decoration="line-through">D04  Build Cobalt charging docks on VoltEdge Bat…</text>
+<text x="458" y="520.0" font-size="11" fill="#5B636E">requires VoltEdge Batteries · cobalt</text>
+<rect x="444" y="555.3333333333334" width="350" height="52" rx="7" fill="#FFFFFF" stroke="#1D7A46" stroke-width="2"/>
+<rect x="444" y="555.3333333333334" width="6" height="52" rx="3" fill="#1D7A46"/>
+<text x="458" y="575.3333333333334" font-size="12.5" font-weight="700" fill="#1B1F24">D19  Switch Cobalt dock batteries from VoltEdge …</text>
+<text x="458" y="593.3333333333334" font-size="11" fill="#5B636E">requires Helio Cells · cobalt</text>
+<rect x="444" y="628.6666666666666" width="350" height="52" rx="7" fill="#FFFFFF" stroke="#8A8F98" stroke-width="2"/>
+<rect x="444" y="628.6666666666666" width="6" height="52" rx="3" fill="#8A8F98"/>
+<text x="458" y="648.6666666666666" font-size="12.5" font-weight="700" fill="#5B636E" text-decoration="line-through">D11  Cobalt docks support 48V systems only</text>
+<text x="458" y="666.6666666666666" font-size="11" fill="#5B636E">replaced</text>
+<rect x="444" y="702.0" width="350" height="52" rx="7" fill="#FFFFFF" stroke="#1D7A46" stroke-width="2"/>
+<rect x="444" y="702.0" width="6" height="52" rx="3" fill="#1D7A46"/>
+<text x="458" y="722.0" font-size="12.5" font-weight="700" fill="#1B1F24">D27  Cobalt docks also support 24V systems</text>
+<text x="458" y="740.0" font-size="11" fill="#5B636E">active</text>
+<rect x="840" y="428" width="394" height="334" rx="10" fill="#F6F8FA" stroke="#D8DEE4"/>
+<text x="854" y="452" font-size="14" font-weight="700" fill="#1B1F24">Not a conflict</text>
+<text x="854" y="469" font-size="10.5" fill="#5B636E">Different scopes: D26 is an exception for backups, not a contradiction</text>
+<path d="M1204,596.0 C1222,596.0 1222,508.0 1204,508.0" fill="none" stroke="#B8860B" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ay)"/>
+<path d="M1009.0,534 L1009.0,570" stroke="#1D7A46" stroke-width="2.6"/>
+<rect x="947.0" y="542.0" width="124" height="20" rx="10" fill="#1D7A46"/>
+<text x="1009.0" y="556.0" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">scopes differ: no conflict</text>
+<rect x="854" y="482" width="350" height="52" rx="7" fill="#FFFFFF" stroke="#1D7A46" stroke-width="2"/>
+<rect x="854" y="482" width="6" height="52" rx="3" fill="#1D7A46"/>
+<text x="868" y="502" font-size="12.5" font-weight="700" fill="#1B1F24">D10  Customer PII must stay in the primary cloud…</text>
+<text x="868" y="520" font-size="11" fill="#5B636E">forbids Orbit Cloud · customer-pii-outside-primary</text>
+<rect x="854" y="570" width="350" height="52" rx="7" fill="#FFFFFF" stroke="#1D7A46" stroke-width="2"/>
+<rect x="854" y="570" width="6" height="52" rx="3" fill="#1D7A46"/>
+<text x="868" y="590" font-size="12.5" font-weight="700" fill="#1B1F24">D26  Encrypted disaster-recovery backups may hol…</text>
+<text x="868" y="608" font-size="11" fill="#5B636E">allows Orbit Cloud · dr-backups</text>
+<text x="20" y="804" font-size="11" fill="#5B636E">Fictional company (Fernwood Robotics). Generated by scripts/make_graph_svg.py from store/precedent.rl.</text>
+</svg>

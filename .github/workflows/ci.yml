@@ -1,0 +1,24 @@
+name: CI
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install
+        run: pip install -r requirements.txt -r requirements-dev.txt
+      - name: The vault generator is deterministic
+        run: |
+          python scenario/fernwood.py > /dev/null
+          git diff --exit-code -- vault eval/answer_key.json
+      - name: Tests (no API key needed)
+        run: python -m pytest -q
+      - name: CLI smoke test
+        run: |
+          python -m precedent conflicts
+          python -m precedent check --tech "Sentra Lidar" --scope outdoor

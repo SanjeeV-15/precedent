@@ -5,6 +5,8 @@ Turn a folder of meeting and decision notes into a graph, then ask: *is this sti
 
 > Status: work in progress for the Relate by Neo4j hackathon. See [PRODUCT.md](PRODUCT.md) for the plan.
 
+![Six situations Precedent catches, drawn from the Relate graph](docs/decision-graph.svg)
+
 ## Use case
 Teams make decisions in meetings and forget them. New proposals quietly contradict old ones, decisions rest on choices that were later replaced, and owners leave. Searching notes for keywords finds old text, not what is *currently* true. Precedent models decisions as a graph, so questions about replacement chains, dependencies, scoped conflicts and ownership become queries.
 
@@ -37,6 +39,30 @@ python eval/run_eval.py --arm files --model claude-haiku-5-5 --key eval/answer_k
 python eval/summarize.py --by-type results/<run folder>
 ```
 Larger vaults for the scaling test: `sh scale/build.sh`.
+
+## Capture a new decision
+`precedent capture` turns a plain note into a structured decision, checks it against what is in force, and writes the note and the
+graph change together after you confirm. Example (dry run):
+```text
+Proposed D31 (claude-haiku-5-5, 2517+824 tokens):
+  title:      Mount Sentra Lidar sensors on outdoor yard robots
+  author:     Marcus Lee
+  affects:    Atlas
+  constraint: allows Sentra Lidar (scope outdoor)
+  replaces:   -
+  depends on: -
+PRE-FLIGHT CONFLICTS with decisions in force:
+  D12 (forbids outdoor): Sentra Lidar approved for indoor use only   <- vs new: allows Sentra Lidar (outdoor)
+Dry run: nothing written.
+```
+How it works and how well it extracts: [docs/capture.md](docs/capture.md).
+
+## Tests
+```bash
+pip install -r requirements-dev.txt
+python -m pytest -q          # 39 offline tests, no API key
+python eval/rescore.py       # re-scores all 572 saved v3 answers against the keys
+```
 
 ## Use it from an agent
 Precedent ships a small read-only MCP server and an agent skill, so any MCP-capable agent can check a proposal against the
