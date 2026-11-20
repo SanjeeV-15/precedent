@@ -93,5 +93,8 @@ On a small vault the two agents are about equally accurate. As the vault grows, 
 file search gets costlier and less reliable. These are small samples; read the caveats in [docs/results.md](docs/results.md).
 Raw transcripts for every run are in `results/`.
 
+## AI use
+Claude Code was used as the coding assistant for the implementation, tests, documentation and evaluation scripts. Claude Haiku 5.5 and Sonnet 5.5 (Anthropic API) are used by `precedent capture` and in the evaluation. Other third-party tools: PyYAML, the Anthropic SDK, pytest and GitHub Actions. Relate features used are listed under "How it uses Relate" above.
+
 ## Credits and license
 Apache-2.0 (see LICENSE). Built with Relate by Neo4j (Apache-2.0). All data is synthetic.
