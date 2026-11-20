@@ -100,7 +100,7 @@ def main(store=str(ROOT / "store/precedent.rl"), out=str(ROOT / "docs/decision-g
             (xa, ya), (xb, yb) = pos[ids[0]], pos[ids[1]]
             xm, ymid = xa + BOX_W / 2 - 20, (ya + BOX_H + yb) / 2
             svg.append(f'<path d="M{xm},{ya + BOX_H} L{xm},{yb}" stroke="{GREEN}" stroke-width="2.6"/>')
-            svg.append(f'<rect x="{xm - 62}" y="{ymid - 10}" width="124" height="20" rx="10" fill="{GREEN}"/>')
+            svg.append(f'<rect x="{xm - 92}" y="{ymid - 10}" width="184" height="20" rx="10" fill="{GREEN}"/>')
             svg.append(f'<text x="{xm}" y="{ymid + 4}" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">scopes differ: no conflict</text>')
         for did in ids:
             x, y = pos[did]

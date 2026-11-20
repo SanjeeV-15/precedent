@@ -11,9 +11,8 @@ Turn a folder of meeting and decision notes into a graph, then ask: *is this sti
 Teams make decisions in meetings and forget them. New proposals quietly contradict old ones, decisions rest on choices that were later replaced, and owners leave. Searching notes for keywords finds old text, not what is *currently* true. Precedent models decisions as a graph, so questions about replacement chains, dependencies, scoped conflicts and ownership become queries.
 
 ## How it uses Relate
-- **Two modes, one graph.**
-  - *Single file* (`store/precedent.rl`, built from the notes by `precedent/store.py`): one portable file judges can query, committed in the repo.
-  - *Native markdown vault* (`vault_native/`, see [docs/native-vault.md](docs/native-vault.md)): Relate opens the notes folder itself, so the folder is the database. A decision written through the graph is rendered back as a markdown note.
+- **Mode: single file.** `store/precedent.rl`, built from the notes by `precedent/store.py` and committed in the repo. Why: one portable file that judges can open and query with no setup, and the file every number in the evaluation was measured on.
+- **Optional second mode: directory.** With the Relate command-line tool installed, Relate can open the notes folder itself as the store (native markdown vault, see [docs/native-vault.md](docs/native-vault.md)). A decision written through the graph is then rendered back as a markdown note. In-memory stores are used only in tests.
 - **What the graph models:** `Decision`, `Meeting`, `Person`, `Project`, `Technology` nodes. Edges: `DECIDED_IN`, `MADE_BY`, `OWNED_BY`, `AFFECTS`, `CONSTRAINS` (properties `stance` and `scope`), `SUPERSEDES`, `DEPENDS_ON`, `ATTENDED_BY`.
 - A decision is *active* when nothing supersedes it, derived from the graph rather than stored.
 - **Relate features used:** embedded single-file store, markdown-vault codec, transactions (capture writes atomically and rolls back on failure), read-only opens, `PROFILE` db-hit counts in the evaluation, and its MCP server (`relate serve --mcp`) alongside our own.
